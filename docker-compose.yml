@@ -1,0 +1,9 @@
+version: '3.2'
+services:
+  ruby-cli:
+    image: ruby:latest
+    command: bash
+    volumes:
+      - ./src:/var/src
+    stdin_open: true
+    tty: true
